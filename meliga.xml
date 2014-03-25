@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension
+		version="3.0"
+		type="plugin"
+		group="content"
+		method="upgrade">
+	<name>Content - Me Liga</name>
+	<author>@cout45</author>
+	<creationDate>Mar 2014</creationDate>
+	<copyright>Copyright (C) 2014 Julio Coutinho. All rights reserved.</copyright>
+	<license> http://www.gnu.org/licenses/gpl-3.0.html</license>
+	<authorEmail>cout45@gmail.com</authorEmail>
+	<authorUrl>http://juliocoutinho.com.br</authorUrl>
+	<version>1.2.0</version>
+	<description>Este plugin permite ligar para o nr de telefone em um artigo.
+		Excelente para mobile.
+		Baseado no plugin Clicktocall de Tim Plummer.
+		Learning Joomla 3 Extension Development.
+	</description>
+	<files>
+		<filename plugin="meliga">meliga.php</filename>
+		<filename>index.html</filename>
+	</files>
+	<languages>
+		<language tag="en-GB">language/en-GB/en-GB.plg_content_meliga.ini</language>
+		<language tag="pt-BR">language/en-GB/pt-BR.plg_content_meliga.ini</language>
+	</languages>	
+	<config>
+		<fields name="params">
+			<fieldset name="basic">		
+			
+				<field name="phoneDigits1" type="text" 
+					default="4" 
+					label="PLG_CONTENT_MELIGA_FIELD_PHONEDIGITS1_LABEL" 
+					description="PLG_CONTENT_MELIGA_FIELD_PHONEDIGITS1_DESC" 
+				/>
+				<field name="phoneDigits2" type="text" 
+					default="4" 
+					label="PLG_CONTENT_MELIGA_FIELD_PHONEDIGITS2_LABEL" 
+					description="PLG_CONTENT_MELIGA_FIELD_PHONEDIGITS2_DESC" 
+				/>
+						
+   			</fieldset>
+		</fields>
+	</config>    	
+</extension>
